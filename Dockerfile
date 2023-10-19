@@ -29,9 +29,9 @@ RUN apt-get update && \
     nvm install node && \
     # continue installation
     apt-get install -y gnupg2 && \
-    apt-get install -y git && \
-    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list &&  apt-get update &&   apt-get install -y yarn
-
+    apt-get install -y npm & \
+    npm install --global yarn
+    
 
 # add app
 #RUN git clone https://github.com/papum20/unibo__projects__CAS-dashboard.git CAS-dashboard
