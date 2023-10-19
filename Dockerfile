@@ -16,7 +16,7 @@ RUN apt-get update && \
     # install apt-utils, for error
     # 'Docker Error - debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module)'
     # (https://linuxamination.blogspot.com/2021/05/docker-error-debconf-cant-locate.html)
-    apt-get install apt-utils && \
+    apt-get install -y apt-utils && \
     apt-get install -y curl && \
     echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections && \
     # install python, needed for nvm
