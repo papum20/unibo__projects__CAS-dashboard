@@ -29,9 +29,9 @@ RUN apt-get update && \
     nvm install node && \
     # continue installation
     apt-get install -y gnupg2 && \
-    apt-get install -y npm & \
+    apt-get install -y npm && \
     npm install --global yarn
-    
+
 
 # add app
 #RUN git clone https://github.com/papum20/unibo__projects__CAS-dashboard.git CAS-dashboard
