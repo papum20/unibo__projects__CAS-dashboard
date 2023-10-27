@@ -1,7 +1,9 @@
-export const config = {
-  URL: "http://localhost",
+import "dotenv/config";
 
-  PORT_NUMBER: "443",
+export const config = {
+  URL: process.env.URL, /* website url? */
+
+  PORT_NUMBER: process.env.PORT_NUMBER, /* website portnumber? */
   SONAR_API:"sonarqube-api",
 
   API: {
