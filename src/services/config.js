@@ -1,7 +1,7 @@
 import "dotenv/config";
 
 export const config = {
-  URL: localhost, /* website url? */
+  URL: localhost, /* root domain, assuming services are at domain/service (e.g. www.site.com/gitlab) */
 
   PORT_NUMBER: 80, /* website portnumber? */
   SONAR_API:"sonarqube-api",
