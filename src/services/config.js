@@ -1,4 +1,3 @@
-import "dotenv/config";
 
 export const config = {
   URL: localhost, /* root domain, assuming services are at domain/service (e.g. www.site.com/gitlab) */
